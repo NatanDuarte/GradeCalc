@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#444444">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/activity_main_exam_1_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="nota P1"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/activity_main_exam_1_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="peso P1"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/activity_main_exam_2_grade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="nota P2"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/activity_main_exam_2_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="peso P2"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/activity_main_quiz_grade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="nota Quiz"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/activity_main_quiz_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="peso Quiz"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/activity_main_others_grade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="nota Outros"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/activity_main_others_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="peso Outros"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activity_main_button_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp"
+        android:text="calculate"/>
+
+    <TextView
+        android:id="@+id/activity_main_text_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:text="Sua nota é 0."/>
+
+</LinearLayout>

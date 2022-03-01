@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         String toastMessage;
         if (weightedSum >= 7) {
             toastMessage = "passou 🍕";
-        } else if (weightedSum > 5) {
+        } else if (weightedSum >= 5) {
             toastMessage = "em exame 😒";
         } else {
             toastMessage = "reprovado 😭";

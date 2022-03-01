@@ -4,11 +4,11 @@
 
 A simple, personal use app to calculate the semester grade, following my university rules:
 
-    average >= 7 : approved
+    grade >= 7 : approved
 
-    7 > average > 5 : in exam
+    7 > grade > 5 : in exam
 
-    average < 5 : disapproved
+    grade < 5 : disapproved
 
 ---
 

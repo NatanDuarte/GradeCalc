@@ -1,133 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#444444"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:background="#444444">
+    tools:context=".MainActivity">
 
-    <LinearLayout
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp">
 
-        <EditText
-            android:id="@+id/activity_main_exam_1_grade"
-            android:layout_width="wrap_content"
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="nota P1"
-            android:importantForAutofill="no"
-            android:inputType="numberDecimal"
-            android:textAlignment="center" />
+            android:padding="8dp">
 
-        <EditText
-            android:id="@+id/activity_main_exam_1_weight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="peso P1"
-            android:importantForAutofill="no"
-            android:inputType="numberDecimal"
-            android:textAlignment="center" />
-    </LinearLayout>
+            <EditText
+                android:id="@+id/activity_main_exam_1_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="nota P1"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:textAlignment="center" />
 
-    <LinearLayout
+            <EditText
+                android:id="@+id/activity_main_exam_1_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="peso P1"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:textAlignment="center" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp">
 
-        <EditText
-            android:id="@+id/activity_main_exam_2_grade"
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="nota P2"
-            android:importantForAutofill="no"
-            android:inputType="numberDecimal"
-            android:textAlignment="center" />
+            android:padding="8dp">
 
-        <EditText
-            android:id="@+id/activity_main_exam_2_weight"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="peso P2"
-            android:importantForAutofill="no"
-            android:inputType="numberDecimal"
-            android:textAlignment="center" />
-    </LinearLayout>
+            <EditText
+                android:id="@+id/activity_main_exam_2_grade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="nota P2"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:textAlignment="center" />
 
-    <LinearLayout
+            <EditText
+                android:id="@+id/activity_main_exam_2_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="peso P2"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:textAlignment="center" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp">
 
-        <EditText
-            android:id="@+id/activity_main_quiz_grade"
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="nota Quiz"
-            android:importantForAutofill="no"
-            android:inputType="numberDecimal"
-            android:textAlignment="center" />
+            android:orientation="horizontal"
+            android:padding="8dp">
 
-        <EditText
-            android:id="@+id/activity_main_quiz_weight"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="peso Quiz"
-            android:importantForAutofill="no"
-            android:inputType="numberDecimal"
-            android:textAlignment="center" />
-    </LinearLayout>
+            <EditText
+                android:id="@+id/activity_main_quiz_grade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="nota Quiz"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:textAlignment="center" />
 
-    <LinearLayout
+            <EditText
+                android:id="@+id/activity_main_quiz_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="peso Quiz"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:textAlignment="center" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp">
 
-        <EditText
-            android:id="@+id/activity_main_others_grade"
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="nota Outros"
-            android:importantForAutofill="no"
-            android:inputType="numberDecimal"
-            android:textAlignment="center" />
+            android:orientation="horizontal"
+            android:padding="8dp">
 
-        <EditText
-            android:id="@+id/activity_main_others_weight"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="peso Outros"
-            android:importantForAutofill="no"
-            android:inputType="numberDecimal"
-            android:textAlignment="center" />
-    </LinearLayout>
+            <EditText
+                android:id="@+id/activity_main_others_grade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="nota Outros"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/activity_main_others_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="peso Outros"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:textAlignment="center" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
 
     <Button
         android:id="@+id/activity_main_button_calculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_margin="8dp"
         android:clickable="true"
         android:focusable="true"
-        android:padding="8dp"
-        android:text="calculate"/>
+        android:padding="16dp"
+        android:text="calcular" />
 
-    <TextView
-        android:id="@+id/activity_main_text_result"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="32sp"
-        android:text="Sua nota é 0."/>
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        app:cardCornerRadius="8dp">
+
+        <TextView
+            android:id="@+id/activity_main_text_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preencha os campos para obter sua nota"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>

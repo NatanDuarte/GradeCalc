@@ -1,171 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#444444"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <androidx.cardview.widget.CardView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        app:cardCornerRadius="8dp">
-
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="8dp">
-
-            <EditText
-                android:id="@+id/activity_main_exam_1_grade"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="nota P1"
-                android:importantForAutofill="no"
-                android:inputType="numberDecimal"
-                android:textAlignment="center" />
-
-            <EditText
-                android:id="@+id/activity_main_exam_1_weight"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="peso P1"
-                android:importantForAutofill="no"
-                android:inputType="numberDecimal"
-                android:textAlignment="center" />
-        </androidx.appcompat.widget.LinearLayoutCompat>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        app:cardCornerRadius="8dp">
-
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="8dp">
-
-            <EditText
-                android:id="@+id/activity_main_exam_2_grade"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="nota P2"
-                android:importantForAutofill="no"
-                android:inputType="numberDecimal"
-                android:textAlignment="center" />
-
-            <EditText
-                android:id="@+id/activity_main_exam_2_weight"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="peso P2"
-                android:importantForAutofill="no"
-                android:inputType="numberDecimal"
-                android:textAlignment="center" />
-        </androidx.appcompat.widget.LinearLayoutCompat>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        app:cardCornerRadius="8dp">
-
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="8dp">
-
-            <EditText
-                android:id="@+id/activity_main_quiz_grade"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="nota Quiz"
-                android:importantForAutofill="no"
-                android:inputType="numberDecimal"
-                android:textAlignment="center" />
-
-            <EditText
-                android:id="@+id/activity_main_quiz_weight"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="peso Quiz"
-                android:importantForAutofill="no"
-                android:inputType="numberDecimal"
-                android:textAlignment="center" />
-        </androidx.appcompat.widget.LinearLayoutCompat>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        app:cardCornerRadius="8dp">
-
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="8dp">
-
-            <EditText
-                android:id="@+id/activity_main_others_grade"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="nota Outros"
-                android:importantForAutofill="no"
-                android:inputType="numberDecimal"
-                android:textAlignment="center" />
-
-            <EditText
-                android:id="@+id/activity_main_others_weight"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="peso Outros"
-                android:importantForAutofill="no"
-                android:inputType="numberDecimal"
-                android:textAlignment="center" />
-        </androidx.appcompat.widget.LinearLayoutCompat>
-    </androidx.cardview.widget.CardView>
-
-    <Button
-        android:id="@+id/activity_main_button_calculate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:padding="16dp"
-        android:text="calcular" />
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:padding="8dp"
-        app:cardCornerRadius="8dp">
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/activity_main_text_result"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Preencha os campos para obter sua nota"
+            android:text="@string/nota"
             android:textAlignment="center"
-            android:textSize="24sp" />
-    </androidx.cardview.widget.CardView>
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-</LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_main_exam_1_grade_outline"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="@string/nota_p1"
+            android:padding="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_text_result">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/activity_main_exam_1_grade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_main_exam_1_weight_outline"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="@string/peso_p1"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_text_result">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/activity_main_exam_1_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_main_exam_2_grade_outline"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/nota_p2"
+            android:padding="8dp"
+            app:layout_constraintStart_toStartOf="@id/activity_main_exam_1_grade_outline"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_exam_1_grade_outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/activity_main_exam_2_grade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_main_exam_2_weight_outline"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/nota_p2"
+            android:padding="8dp"
+            app:layout_constraintStart_toStartOf="@id/activity_main_exam_1_weight_outline"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_exam_1_weight_outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/activity_main_exam_2_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_main_quiz_grade_outline"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/nota_quiz"
+            android:padding="8dp"
+            app:layout_constraintStart_toStartOf="@id/activity_main_exam_2_grade_outline"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_exam_2_grade_outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/activity_main_quiz_grade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_main_quiz_weight_outline"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/peso_quiz"
+            android:padding="8dp"
+            app:layout_constraintStart_toStartOf="@id/activity_main_exam_2_weight_outline"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_exam_2_weight_outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/activity_main_quiz_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_main_others_grade_outline"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/nota_outros"
+            android:padding="8dp"
+            app:layout_constraintStart_toStartOf="@id/activity_main_quiz_grade_outline"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_quiz_grade_outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/activity_main_others_grade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_main_others_weight_outline"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/peso_outros"
+            android:padding="8dp"
+            app:layout_constraintStart_toStartOf="@id/activity_main_quiz_weight_outline"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_quiz_weight_outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/activity_main_others_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/activity_main_button_calculate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="16dp"
+            android:text="@string/calcular"
+            app:layout_constraintEnd_toEndOf="@id/activity_main_others_weight_outline"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_others_weight_outline" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">GradeCalc</string>
+    <string name="nota_p1">nota P1</string>
+    <string name="peso_p1">peso P1</string>
+    <string name="nota_p2">nota P2</string>
+    <string name="peso_p2">peso P2</string>
+    <string name="nota_quiz">nota quiz</string>
+    <string name="peso_quiz">peso quiz</string>
+    <string name="nota_outros">nota outros</string>
+    <string name="peso_outros">peso outros</string>
+    <string name="calcular">Calcular</string>
+    <string name="nota">Nota: --</string>
 </resources>

@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         double weightedMean = grade.weightedMean();
 
         @SuppressLint("DefaultLocale")
-        String output = "Sua nota é " + String.format("%.2f", weightedMean) + ".";
+        String output = String.format("Nota: %.2f", weightedMean);
 
         TextView resultText = findViewById(R.id.activity_main_text_result);
         resultText.setText(output);
